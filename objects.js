@@ -1,6 +1,6 @@
 var playlist = {
-  voidz:"Permanent High School"
-  soko: "Diabolo Menthe"
+  voidz:"Permanent High School",
+  soko: "Diabolo Menthe",
   billyidol: "Dancing With Myself"
 }
 
