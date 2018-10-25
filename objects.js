@@ -1,16 +1,18 @@
-var playlist = new Object ({StillWoozy: "Goodie Bag",
-                            Soko: "Diabolo Menthe",
-                            NewOrder: "True Faith"})
+var playlist = {
+  artist1: "song1",
+  artist2: "song2",
+  artist3: "song3"
+};
 
-function updatePlaylist(myPlaylist, artistName, songTitle){
-  return Object.assign({}, myPlaylist,{[artistName]:songTitle})
+function updatePlaylist(thePlaylist, artistName, songTitle) {
+  return Object.assign({}, thePlaylist, { [artistName]: songTitle});
 }
 
-updatePlaylist(playlist, "Voidz", "Permanent High School")
+updatePlaylist(playlist, "artist4", "song4");
 
-function removeFromPlaylist(myPlaylist, artistName){
-  delete myPlaylist[artistName]
-  return myPlaylist
+function removeFromPlaylist(thePlaylist, artistName) {
+  delete thePlaylist[artistName];
+  return thePlaylist;
 }
 
-removeFromPlaylist(playlist,"Soko")
+removeFromPlaylist(playlist, "artist2");
