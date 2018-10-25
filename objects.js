@@ -1,3 +1,4 @@
+var artistName, songTitle
 var playlist = new Object ({[artistName]:songTitle})
 
 function updatePlaylist(myPlaylist, artistName, songTitle){
