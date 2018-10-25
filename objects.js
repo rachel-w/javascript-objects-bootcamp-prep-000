@@ -1,11 +1,9 @@
-var artistName, songTitle
-var playlist = new Object ({[artistName]:songTitle})
-
-function updatePlaylist(playlist, artistName, songTitle){
-  return Object.assign({}, playlist,{[artistName]:songTitle})
+var playlist = {
+  voidz:"Permanent High School"
+  soko: "Diabolo Menthe"
+  billyidol: "Dancing With Myself"
 }
 
-function removeFromPlaylist(playlist, artistName){
-  delete playlist[artistName]
-  return playlist
+function updatePlaylist(playlist, artistName, songTitle){
+  Object.assign({}, playlist, {[artistName]:songTitle})
 }
